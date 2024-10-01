@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Seller/static/css/main.13824f91.css",
+    "main.js": "/Seller/static/js/main.13194e17.js",
+    "static/js/453.51b20bab.chunk.js": "/Seller/static/js/453.51b20bab.chunk.js",
+    "static/media/speaker.png": "/Seller/static/media/speaker.74b5e10eb0322272e621.png",
+    "static/media/buds.png": "/Seller/static/media/buds.f4f670b797426a1153fe.png",
+    "static/media/gmouse.png": "/Seller/static/media/gmouse.c897a4a3498460c4dcc2.png",
+    "static/media/mouse.png": "/Seller/static/media/mouse.b2c33d55974f6439c471.png",
+    "static/media/banner.jpg": "/Seller/static/media/banner.b59333019f03d455aa6f.jpg",
+    "static/media/watch.png": "/Seller/static/media/watch.810148d550be91dadf95.png",
+    "static/media/laptop.png": "/Seller/static/media/laptop.b3c714f7abed341a8ec0.png",
+    "static/media/headphone.png": "/Seller/static/media/headphone.ca86de606f56e9a11573.png",
+    "static/media/fitness.png": "/Seller/static/media/fitness.7462acd0aa350246d984.png",
+    "static/media/tv.png": "/Seller/static/media/tv.2e7d6629e93b9c6e8975.png",
+    "static/media/powerbank.png": "/Seller/static/media/powerbank.0d173488d095192ab094.png",
+    "static/media/charger.png": "/Seller/static/media/charger.cdaaeb168f03c038f5be.png",
+    "static/media/bambooTumbler.png": "/Seller/static/media/bambooTumbler.7b443bd42ac9b8520c09.png",
+    "static/media/keyboard.png": "/Seller/static/media/keyboard.75139dcebf88b9d040f1.png",
+    "static/media/white-transparent.png": "/Seller/static/media/white-transparent.a2baf485a3666df4ae47.png",
+    "static/media/revenue.png": "/Seller/static/media/revenue.f6f0909792463339e05f.png",
+    "static/media/orders.png": "/Seller/static/media/orders.cce330ddb6202f0b08d0.png",
+    "static/media/aov.png": "/Seller/static/media/aov.c373e8860c26bd4c483e.png",
+    "static/media/sales-card.png": "/Seller/static/media/sales-card.e8fcb09063f918fc4537.png",
+    "index.html": "/Seller/index.html",
+    "static/media/bell.svg": "/Seller/static/media/bell.6657646fcc131f5047375e9f59bb52b2.svg",
+    "static/media/user.svg": "/Seller/static/media/user.780a52a3688dd2fd0230fe4949982dd5.svg",
+    "main.13824f91.css.map": "/Seller/static/css/main.13824f91.css.map",
+    "main.13194e17.js.map": "/Seller/static/js/main.13194e17.js.map",
+    "453.51b20bab.chunk.js.map": "/Seller/static/js/453.51b20bab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13824f91.css",
+    "static/js/main.13194e17.js"
+  ]
+}
