@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaVerse Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #2C3E50;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-header h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px 0;
+    cursor: pointer;
+    color: #ECF0F1;
+}
+
+.sidebar nav ul li:hover {
+    color: #2980B9;
+}
+
+.logout {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.main-content {
+    background-color: #ECF0F1;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.dashboard-header input {
+    padding: 10px;
+    width: 300px;
+}
+
+.user-avatar {
+    background-color: #2980B9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.stats-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.stat-item:last-child {
+    margin-right: 0;
+}
+
+.stat-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.stat-item p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.charts-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.trend-chart, .sales-chart, .transactions-list {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.trend-chart h4, .sales-chart h4, .transactions-list h4 {
+    margin: 0 0 10px 0;
+}
+
+.trend-chart {
+    flex: 2;
+}
+
+.sales-chart .chart-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #f39c12;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.transactions-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transactions-list ul li {
+    padding: 5px 0;
+}
+
+/* Support Tickets and Customer Demographics */
+.support-demographics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.support-tickets, .customer-demographic {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.support-tickets {
+    margin-right: 20px;
+}
+
+</style>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>NexaVerse</h2>
+        </div>
+        <nav>
+            <ul>
+                <li>Overview</li>
+                <li>Transactions</li>
+                <li>Customers</li>
+                <li>Reports</li>
+                <li>Settings</li>
+                <li>Developer</li>
+            </ul>
+        </nav>
+        <button class="logout">Log out</button>
+    </aside>
+
+    <!-- Main Dashboard Content -->
+    <div class="main-content">
+        <!-- Dashboard Header -->
+        <header class="dashboard-header">
+            <h1>Dashboard</h1>
+            <input type="search" placeholder="Search transactions, customers, subscriptions">
+            <div class="user-avatar"></div>
+        </header>
+
+        <!-- Stats Overview -->
+        <section class="stats-overview">
+            <div class="stat-item">
+                <h3>Current MRR</h3>
+                <p>$12.4k</p>
+            </div>
+            <div class="stat-item">
+                <h3>Current Customers</h3>
+                <p>16,601</p>
+            </div>
+            <div class="stat-item">
+                <h3>Active Customers</h3>
+                <p>33%</p>
+            </div>
+            <div class="stat-item">
+                <h3>Churn Rate</h3>
+                <p>2%</p>
+            </div>
+        </section>
+
+        <!-- Charts and Graphs Section -->
+        <section class="charts-section">
+            <div class="trend-chart">
+                <h4>Trend</h4>
+                <!-- Placeholder for Chart -->
+                <canvas id="trendChart"></canvas>
+            </div>
+
+            <div class="sales-chart">
+                <h4>Sales</h4>
+                <div class="chart-circle">
+                    <p>342 Sales</p>
+                </div>
+            </div>
+
+            <div class="transactions-list">
+                <h4>Transactions</h4>
+                <ul>
+                    <li>S. Evangston +320</li>
+                    <li>S. Sterling +189</li>
+                    <li>O. Redwonne +152</li>
+                    <!-- More transactions -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Support Tickets and Customer Demographics -->
+        <section class="support-demographics">
+            <div class="support-tickets">
+                <h4>Support Tickets</h4>
+                <ul>
+                    <li>Open: Login Issues</li>
+                    <li>Pending: Billing Inquiries</li>
+                    <li>Closed: Product Malfunction</li>
+                </ul>
+            </div>
+
+            <div class="customer-demographic">
+                <h4>Customer Demographic</h4>
+                <img src="world-map.png" alt="World Map">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
