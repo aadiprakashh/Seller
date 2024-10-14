@@ -33,7 +33,7 @@ function App() {
             <Header />
             <div className="app-content">
               <Routes>
-                <Route exact path="/sales" element={<SalesPage />} />
+                <Route exact path="/" element={<SalesPage />} />
                 <Route exact path="/order" element={<OrderPage />} />
                 <Route exact path="/product" element={<ProductPage />} />
                 <Route exact path="/customer" element={<CustomerPage />} />
