@@ -36,7 +36,7 @@ const Product = () => {
   };
 
   return (
-    <div className="product">
+    <div className="product col-md-10">
       {productList.map((product, index) => (
         <div className="product-list" key={index}>
           {/* Product Overview */}
@@ -216,7 +216,7 @@ const Product = () => {
                   Edit Product
                 </button>
                 <button className="btn-delete">Delete Product</button>
-                <button className="btn-duplicate">Duplicate Product</button>
+                <button className="btn-add">Add Product</button>
               </div>
             </section>
           </div>

@@ -1,12 +1,12 @@
-import React from "react";
+
 import "./customer.css"; // Add relevant styles here
 import { customerS } from "../data"; // Assuming customerS contains your customer data
 
 const Customer = () => {
   return (
-    <div className="customer-page">
+    <div className="customer-page container-fluid">
       {customerS.map((customer) => (
-        <div className="customer" key={customer.id}>
+        <div className="customer row col-md-10" key={customer.id}>
           {/* Customer Information Section */}
           <div className="customer-info">
             <h2>Customer Information</h2>

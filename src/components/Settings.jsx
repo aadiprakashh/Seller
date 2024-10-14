@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { sellerProfileData } from "../data"; // Adjust the path as necessary
 import "./settings.css"; // Assuming you will style the component separately
 
@@ -18,7 +18,7 @@ const Settings = () => {
   } = sellerProfileData;
 
   return (
-    <div className="seller-settings">
+    <div className="seller-settings col-md-10">
       {/* Settings Header Section */}
       <h1>Settings</h1>
 

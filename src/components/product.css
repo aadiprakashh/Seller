@@ -28,8 +28,6 @@
     font-family: var(--font2);
 }
 .product{
-    width: 85%;
-    /* background-color: #36454F; */
     height: auto;
     float: right;
     padding:10px;
@@ -191,13 +189,13 @@ transform: translateY(-5px);        color: var(--orange-web);
  }
 
  /* Duplicate button */
- .btn-duplicate {
+ .btn-add {
      background-color: #2ecc71;
      /* Green for success */
      color: #fff;
  }
 
- .btn-duplicate:hover {
+ .btn-add:hover {
      background-color: #27ae60;
      /* Darker green on hover */
      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

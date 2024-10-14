@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import{ useState } from "react";
 import "./order.css"; // Assuming you save the CSS separately
 import {ordersData} from "../data";
 const Orders = () => {
@@ -16,7 +16,7 @@ const Orders = () => {
   };
 
   return (
-    <div className="order">
+    <div className="order col-md-10">
       <h1>Orders</h1>
 
       {/* Order List Section */}
@@ -99,23 +99,22 @@ const Orders = () => {
                 ></button>
               </div>
               <div className="modal-body">
-                <ul>
+                <ul className="modal-list">
                   {selectedOrder.products.map((product, idx) => (
-                    <li key={idx} className="">
+                    <li key={idx}>
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="product-image"
+                        className="product-im"
                         style={{
                           width: "70px",
                           height: "70px",
                           aspectRatio: "2/2",
                           objectFit: "contain",
-                          marginRight: "10px",
                         }}
                       />
                       <strong>{product.name}</strong>
-                      <div className="ms-auto">
+                      <div>
                         Quantity: <strong>{product.quantity}</strong> <br />
                         Price: <strong>{product.price}</strong>
                       </div>
@@ -134,13 +133,11 @@ const Orders = () => {
                 </div>
               </div>
               <div className="modal-footer">
-                <button
-                  type="button"
-                  className="close-btn"
-                  data-bs-dismiss="modal"
-                  onClick={closeModal}
-                >
-                  Close
+                <button type="button" className="confirm-btn"> 
+                Confirm
+                </button>
+                <button type="button" className="info-btn"> 
+                View
                 </button>
               </div>
             </div>

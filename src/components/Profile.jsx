@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { sellerProfileData } from "../data"; // Adjust the path as necessary
 import "./profile.css"; // Assuming you will style the component separately
 
@@ -15,11 +15,11 @@ const Profile = () => {
     store: { storeName, storeDescription },
     banking: { bankName, accountHolderName },
     preferences: { language, timeZone },
-    sellerInsights: { totalSales },
+    // sellerInsights: { totalSales },
   } = sellerProfileData;
 
   return (
-    <div className="seller-profile">
+    <div className="seller-profile col-md-10">
       {/* Profile Header Section */}
       <div className="profile-header">
         <div className="profile-picture">

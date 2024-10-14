@@ -1,4 +1,3 @@
-import React from "react";
 import "./Header.css";
 import logo from "../assets/white-transparent.png";
 import "bootstrap/dist/css/bootstrap.css";
@@ -7,7 +6,7 @@ import sales from "../assets/sales.png";
 import order from "../assets/order.png";
 import Customer from "../assets/Customer.png";
 import project from "../assets/project.png";
-import performance from "../assets/performance.png";
+// import performance from "../assets/performance.png";
 import profile from "../assets/profile.png";
 import sign from "../assets/Sign In.png";
 import Setting from "../assets/Settings.png";
