@@ -38,7 +38,8 @@ The **Seller's Admin Dashboard** is a web-based application designed to provide 
 ## Getting Started
 
 ## Project Structure
-    ```SELL/
+    ```
+    SELL/
         │
         ├── dist/                   # Distribution folder (production build)
         ├── node_modules/           # Node.js dependencies
