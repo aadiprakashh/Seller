@@ -38,8 +38,8 @@ The **Seller's Admin Dashboard** is a web-based application designed to provide 
 ## Getting Started
 
 ## Project Structure
-    ```
-        SELL/
+   ```bash
+    SELL/
         │
         ├── dist/                   # Distribution folder (production build)
         ├── node_modules/           # Node.js dependencies
@@ -62,9 +62,8 @@ The **Seller's Admin Dashboard** is a web-based application designed to provide 
         ├── package.json            # Project metadata and dependencies
         ├── README.md               # Documentation for the project
         └── vite.config.js          # Vite configuration file
-
-
-
+    
+       
 ### Prerequisites
 - Node.js (v14+)
 - npm or yarn (latest version)
