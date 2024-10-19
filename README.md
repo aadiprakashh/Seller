@@ -9,7 +9,7 @@
 - [Available Scripts](#available-scripts)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
-- [License](#license)
+- [License](#license)       
 
 ---
 
@@ -36,6 +36,33 @@ The **Seller's Admin Dashboard** is a web-based application designed to provide 
 ---
 
 ## Getting Started
+
+## Project Structure
+
+SELL/
+│
+├── dist/                   # Distribution folder (production build)
+├── node_modules/           # Node.js dependencies
+├── public/                 # Public assets (index.html, static files)
+│
+├── src/                    # Source code directory
+│   ├── assets/             # Assets (images, fonts, etc.)
+│   ├── components/         # React components
+│   ├── App.css             # Main CSS for the App component
+│   ├── App.jsx             # Main App component
+│   ├── data.js             # Data or configuration file
+│   ├── index.css           # Global styles for the project
+│   ├── LockedApp.jsx       # Component for a locked state or restricted access
+│   └── main.jsx            # Entry point for the React app
+│
+├── .gitignore              # Files and folders to ignore in Git
+├── eslint.config.js        # ESLint configuration for linting
+├── index.html              # HTML template
+├── package-lock.json       # Lock file for dependencies
+├── package.json            # Project metadata and dependencies
+├── README.md               # Documentation for the project
+└── vite.config.js          # Vite configuration file
+
 
 ### Prerequisites
 - Node.js (v14+)
