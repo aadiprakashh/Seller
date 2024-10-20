@@ -98,7 +98,7 @@ Contributions are welcome! If you have suggestions for improvements or features,
     Click the Fork button on the top-right corner of the repository page to create your own copy.
 2. **Clone your fork:**
     ```bash
-    git clone https://github.com/your-username/Seller.git
+    git clone https://github.com/aadiprakashh/Seller.git
 3. **Navigate to the project folder**
     ```bash
     cd seller
