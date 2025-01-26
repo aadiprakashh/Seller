@@ -87,7 +87,7 @@ To run the app locally, follow these steps:
    ```bash
    npm start
 5. **Open in Browser**: Visit http://localhost:3000 to view the app in your browser.
-6. **Username & Password: seller**
+6. **Username & Password:** seller
 
 ---
 
